@@ -5,5 +5,5 @@ description: 'build fastcrud and client repo'
 runs:
   using: "composite"
   steps:
-    - run: bash scripts.sh
+    - run: ./scripts.sh
       shell: bash
