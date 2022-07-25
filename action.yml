@@ -1,0 +1,12 @@
+name: Push directory to another repository
+description: >-
+  DESCRIPTION
+inputs:
+  source-before-directory:
+    description: Source before directory from the origin directory
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - '${{ inputs.source-before-directory }}'
