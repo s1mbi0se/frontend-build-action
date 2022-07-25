@@ -5,5 +5,5 @@ description: 'build fastcrud and client repos'
 runs:
   using: "composite"
   steps:
-    - run: sudo scripts.sh
+    - run: sudo bash scripts.sh
       shell: bash
