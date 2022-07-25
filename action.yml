@@ -1,9 +1,9 @@
 name: Build Fastcrud Client
 
-description: 'build fastcrud and client repo'
+description: 'build fastcrud and client repos'
 
 runs:
   using: "composite"
   steps:
-    - run: scripts.sh
+    - run: sh scripts.sh
       shell: bash
