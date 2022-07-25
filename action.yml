@@ -1,12 +1,9 @@
-name: Push directory to another repository
-description: >-
-  DESCRIPTION
-inputs:
-  source-before-directory:
-    description: Source before directory from the origin directory
-    required: false
+name: Build Fastcrud Client
+
+description: 'build fastcrud and client repo'
+
 runs:
-  using: docker
-  image: Dockerfile
-  args:
-    - '${{ inputs.source-before-directory }}'
+  using: "composite"
+  steps:
+    - run: scripts.sh
+      shell: bash
